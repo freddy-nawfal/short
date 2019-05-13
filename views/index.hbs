@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>SHORT URL</title>
+
+    <meta name="author" content="Antoine Coulon">
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card text-center">
+
+            <div class="card-header">URL shortener</div>
+
+            <div class="card-body">
+
+                <form method="POST" action="/">
+                    <div class="form-group">
+                        <label for="url">Enter URL :</label>
+                        <input type="text" class="form-control" id="url" name="url" placeholder="https://antcln.me/">
+                    </div>
+                    <button class="btn btn-outline-info" type="submit">Shorten URL</button>
+                </form>
+
+                {{#if alert}}
+
+                <br />
+                <div class="alert alert-info" role="alert">{{alert}}</div>
+
+                {{/if}}
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="/js/script.js"></script>
+
+</body>
+
+</html>
