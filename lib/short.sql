@@ -30,7 +30,8 @@ CREATE TABLE `url` (
   `id` int(11) NOT NULL,
   `url` varchar(1023) NOT NULL,
   `short_url` varchar(14) NOT NULL,
-  `timestamp` timestamp NOT NULL
+  `timestamp` timestamp NOT NULL,
+  `clicks` int(11) NOT NULL 
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
