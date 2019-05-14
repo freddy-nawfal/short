@@ -72,7 +72,7 @@ server.post('/', function (req, res) {
 
                 if (result) {
 
-                    req.flash('alert', "Short URL Created : ntcln.me/" + shortUrl);
+                    req.flash('alert', "Short URL Created : https://"+req.get('host')+"/" + shortUrl);
 
                     res.render('index', { 'alert': req.flash('alert') });
 
